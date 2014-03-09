@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>collapsed form elements && tabbed page</title>
+		<script src="js/main.js"></script>
+		<link rel="stylesheet" href="css/main.css">  
+	</head>
+	<body>
+		<div id = "collapsed">
+			<div class="content">
+				<h1>Title one</h1>
+				<div>
+					<p>this is test about conent one;</p>
+				</div>
+			</div>
+			<div class="content">
+				<h1>Title two</h1>
+				<div>
+					<p>this is test about conent two;</p>
+				</div>
+			</div>
+			<div class="content">
+				<h1>Title three</h1>
+				<div>
+					<p>this is test about conent three;</p>
+				</div>
+			</div>
+			<div class="content">
+				<h1>Title four</h1>
+				<div>
+					<p>this is test about conent four;</p>
+				</div>
+			</div>
+		</div>
+		<div id ="tabbed">
+			<div class="tabbed_tit on" ><h2>TITLE ONE</h2></div>
+			<div class="tabbed_tit"><h2>TITLE TWO</h2></div>
+			<div class="tabbed_tit"><h2>TITLE THREE</h2></div>
+			<div class="tabbed_main on" style="display:block">
+				<p>this is main content for title one</p>
+			</div>
+			<div class="tabbed_main">
+				<p>this is main content for title two</p>
+			</div>
+			<div class="tabbed_main">
+				<p>this is main content for title three</p>
+			</div>
+		</div>
+	</body>
+	<script>
+		var col  = new collapsed;
+		col.coll("collapsed","content");
+		col.tab("tabbed_tit","tabbed_main");
+	</script>
+</html>
